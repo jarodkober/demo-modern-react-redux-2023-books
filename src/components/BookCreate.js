@@ -16,14 +16,16 @@ function BookCreate({ onCreate }) {
 	};
 
 	return (
-		<div>
+		<div className="book-create">
+			<h3>Add a Book</h3>
 			<form onSubmit={handleSubmit}>
 				<label>Title</label>
 				<input
+					className="input"
 					onChange={handleChange}
 					value={title}
 				/>
-				<button>Create!</button>
+				<button className="button">Create!</button>
 			</form>
 		</div>
 	);
